@@ -1,0 +1,112 @@
+.header
+	padding: 30px 0
+	background: url("../img/header-bg.png") center center no-repeat / cover 
+	position: relative
+	height: 100vh
+	z-index: 0
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	&::after
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background: rgba(75, 49, 49, 0.5)
+		z-index: -1
+	&-logo
+		width: 160px
+		height: 160px
+		border: 2px solid #fff
+		border-radius: 50%
+		position: relative
+		.cercle
+			width: 146px
+			height: 146px
+			border: 2px dashed #fff
+			border-radius: 50%
+			position: absolute
+			left: 5px
+			top: 5px
+			img
+				position: absolute
+				left: calc(50% - 40px)
+				top: calc(50% - 47px)
+				width: 80px
+				height: 94px
+				fill: #fff
+	&-nav
+		// margin-bottom: 2rem
+		&__item
+			font-family: 'Roboto', sans-serif
+			font-weight: 300
+			color: #fff
+			font-size: 18px
+			a
+				font-family: 'Roboto', sans-serif
+				font-weight: 300
+				color: #fff
+				font-size: 18px
+				position: relative
+				&::after
+					content: ''
+					width: 0
+					height: 1px
+					position: absolute
+					bottom: -2px
+					left: 0
+					background-color: #fff
+					transition: 0.2s
+				&:hover::after
+					width: 100%
+			&-loc
+				display: flex
+				align-items: center
+				img
+					height: 20px
+					margin-right: 15px
+	
+	&-descr
+		&__subtitle
+			font-family: 'Roboto Slab', serif
+			font-size: 32px
+			font-weight: 300
+			margin-bottom: 20px
+		&__title
+			font-family: "Roboto Slab", serif
+			font-size: 42px
+			font-weight: 700
+			margin-bottom: 45px
+		&__btn
+			button
+				width: 160px
+				height: 50px
+				box-shadow: 0 0 50px rgba(233, 0, 84, 0.63)
+				border-radius: 100px
+				background-color: #d0855a
+				cursor: pointer
+	
+	&-arrow
+		margin: 0 auto
+		display: flex
+		flex-direction: column
+		align-items: center
+		&__text
+			margin-bottom: 10px
+			font-family: 'Roboto', sans-serif
+			font-size: 16px
+			font-weight: 400
+			cursor: pointer
+		img
+			cursor: pointer
+
+
+
+
+
+
+
+
+
