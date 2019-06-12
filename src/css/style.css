@@ -21,10 +21,24 @@ textarea:hover {
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.orange-btn {
+  width: 160px;
+  height: 50px;
+  -webkit-box-shadow: 0px 0px 20px rgba(233, 0, 84, 0.63);
+  box-shadow: 0px 0px 20px rgba(233, 0, 84, 0.63);
+  border-radius: 100px;
+  background-color: #d0855a;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
   color: #fff;
 }
 
 .header {
+  color: #fff;
   padding: 30px 0;
   background: url("../img/header-bg.png") center center no-repeat/cover;
   position: relative;
@@ -125,6 +139,10 @@ textarea:hover {
   margin-right: 15px;
 }
 
+.header-descr {
+  margin-top: -60px;
+}
+
 .header-descr__subtitle {
   font-family: 'Roboto Slab', serif;
   font-size: 32px;
@@ -137,16 +155,6 @@ textarea:hover {
   font-size: 42px;
   font-weight: 700;
   margin-bottom: 45px;
-}
-
-.header-descr__btn button {
-  width: 160px;
-  height: 50px;
-  -webkit-box-shadow: 0 0 50px rgba(233, 0, 84, 0.63);
-  box-shadow: 0 0 50px rgba(233, 0, 84, 0.63);
-  border-radius: 100px;
-  background-color: #d0855a;
-  cursor: pointer;
 }
 
 .header-arrow {
@@ -173,4 +181,121 @@ textarea:hover {
 
 .header-arrow img {
   cursor: pointer;
+}
+
+.adv {
+  padding-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #292929;
+}
+
+.adv-item {
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 32px 0 32px 30px;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 140px;
+}
+
+.adv-item__text {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.adv-item__text span {
+  display: block;
+}
+
+.adv-item img {
+  margin-right: 20px;
+}
+
+.products {
+  color: #292929;
+  padding-top: 120px;
+  position: relative;
+}
+
+.products-item {
+  margin-bottom: 120px;
+}
+
+.products-item:last-child {
+  margin-bottom: 80px;
+}
+
+.products-img::after {
+  content: '';
+  position: absolute;
+  width: 610px;
+  height: 456px;
+  border: 3px dashed #fff;
+  left: 35px;
+  top: 23px;
+}
+
+.products .product {
+  padding-left: 15px;
+  font-family: 'Roboto Slab', serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.products .product-title {
+  font-weight: 700;
+  font-size: 34px;
+}
+
+.products .product-descr {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.products .product-adv {
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.products .product-adv li {
+  margin: 20px 0;
+}
+
+.products .product-adv li:first-child {
+  margin-top: 0;
+}
+
+.products .product-adv li:last-child {
+  margin-bottom: 0;
+}
+
+.products .product-cost {
+  font-weight: 700;
+  font-size: 18px;
 }
