@@ -230,11 +230,11 @@
   <section class="fform">
     <h2 class="fform-title">Закажите себе эксклюзивный аксессуар</h2>
     <div class="container">
-      <form action="#" method="POST" class="fform-form">
+      <form action="./mailer/sendform.php" method="POST" class="fform-form">
         <div class="fform-form__inputs">
-          <input type="text" class="fform-form__inputs-name" placeholder="Ваше имя">
-          <input type="tel" class="fform-form__inputs-tel tel" placeholder="Телефон">
-          <button class="fform-form__inputs-btn orange-btn" type="submit" disabled="disabled">Заказать</button>
+          <input name="name" type="text" class="fform-form__inputs-name" placeholder="Ваше имя">
+          <input name="phone" type="tel" class="fform-form__inputs-tel tel" placeholder="Телефон">
+          <button class="fform-form__inputs-btn orange-btn" type="submit">Заказать</button>
         </div>
         <div class="fform-form__check">
           <input type="checkbox" id="fform-form__check" class="">
@@ -271,12 +271,12 @@
           <div class="mainf-wrapper">
             <h2 class="mainf-title">Позволь себе стильный и качественный аксессуар</h2>
             <h3 class="mainf-subtitle">закажи прямо сейчас</h3>
-            <form action="#" method="POST" class="mainf-form">
-              <input type="text" placeholder="Ваше имя" class="mainf-form__input">
-              <input type="tel" placeholder="Телефон" class="mainf-form__input tel">
+            <form action="./mailer/sendform.php" method="POST" class="mainf-form">
+              <input name="name" type="text" placeholder="Ваше имя" class="mainf-form__input">
+              <input name="phone" type="tel" placeholder="Телефон" class="mainf-form__input tel">
               <input type="checkbox" id="mainf-form__check" class="mainf-form__check">
               <label for="mainf-form__check">Согласен на обработку персональных данных в соответствии с <a href="#">политикой конфиденциальности</a></label>
-              <button class="mainf-form__btn orange-btn" type="submit" disabled="disabled">Заказать обратный звонок</button>
+              <button class="mainf-form__btn orange-btn" type="submit">Заказать обратный звонок</button>
             </form>
           </div>
         </div>
@@ -322,12 +322,12 @@
       <div class="overlay-close"><span></span></div>
       <h2 class="mainf-title">Позволь себе стильный и качественный аксессуар</h2>
       <h3 class="mainf-subtitle">закажи прямо сейчас</h3>
-      <form action="#" method="POST" class="mainf-form">
-        <input type="text" placeholder="Ваше имя" class="mainf-form__input">
-        <input type="tel" placeholder="Телефон" class="mainf-form__input tel">
+      <form action="./mailer/sendform.php" method="POST" class="mainf-form">
+        <input name="name" type="text" placeholder="Ваше имя" class="mainf-form__input">
+        <input name="phone" type="tel" placeholder="Телефон" class="mainf-form__input tel">
         <input type="checkbox" id="overlay__check" class="mainf-form__check">
         <label for="overlay__check">Согласен на обработку персональных данных в соответствии с <a href="#">политикой конфиденциальности</a></label>
-        <button class="mainf-form__btn orange-btn" type="submit" disabled="disabled">Заказать обратный звонок</button>
+        <button class="mainf-form__btn orange-btn" type="submit">Заказать обратный звонок</button>
       </form>
     </div>
   </div>
